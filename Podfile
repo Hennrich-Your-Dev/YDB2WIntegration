@@ -10,4 +10,5 @@ target 'YDB2WIntegration' do
 
   # Pods for YDB2WIntegration
   pod 'YDExtensions'
+  pod 'YDB2WModels'
 end

@@ -1,22 +1,19 @@
 //
-//  CurrentAddress.swift
-//  YDIntegration
+//  YDAddress.swift
+//  YDB2WModels
 //
-//  Created by Douglas Hennrich on 27/10/20.
-//  Copyright © 2020 YourDev. All rights reserved.
+//  Created by Douglas Hennrich on 08/12/20.
 //
 
-import Foundation
+import UIKit
 import CoreLocation
 
-public struct YDCurrentAddress: Decodable {
-  // MARK: Properties
+public class YDAddress: Decodable {
   public var type: YDAddressType?
 
   public var postalCode: String?
 
   public let address: String?
-
   public let number: String?
   public let complement: String?
 
@@ -28,38 +25,42 @@ public struct YDCurrentAddress: Decodable {
   public let latitude: Double?
 
   // MARK: Computed variables
-  public var transformAddress: String {
+  public var formatAddress: String {
     guard var address = address else {
       return ""
     }
 
-    if let number = number {
+    if let number = number,
+       !number.isEmpty {
       address += ", \(number)"
     }
 
-    if let complement = complement {
+    if let complement = complement,
+       !complement.isEmpty {
       address += ", \(complement)"
     }
 
-    if let city = city {
+    if let city = city,
+       !city.isEmpty {
       address += ", \(city)"
     }
 
-    if let state = state {
+    if let state = state,
+       !state.isEmpty {
       address += " - \(state)"
     }
 
     return address
   }
 
-  public var coordinates: CLLocationCoordinate2D? {
-    guard let lat = latitude,
-          let lng = longitude
+  public var coords: CLLocationCoordinate2D? {
+    guard let latitude = latitude,
+          let longitude = longitude
     else {
       return nil
     }
 
-    return CLLocationCoordinate2D(latitude: lat, longitude: lng)
+    return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
   }
 
   // MARK: Init
@@ -107,8 +108,10 @@ public struct YDCurrentAddress: Decodable {
 
     self.address = savedAddress["text"]
 
-    if let latitudeString = savedAddress["latitude"], let latitude = Double(latitudeString),
-       let longitudeString = savedAddress["longitude"], let longitude = Double(longitudeString) {
+    if let latitudeString = savedAddress["latitude"],
+       let latitude = Double(latitudeString),
+       let longitudeString = savedAddress["longitude"],
+       let longitude = Double(longitudeString) {
       self.latitude = latitude
       self.longitude = longitude
 
@@ -125,4 +128,12 @@ public struct YDCurrentAddress: Decodable {
     self.complement = nil
     self.neighborhood = nil
   }
+}
+
+public enum YDAddressType: String, CaseIterable, Decodable {
+  case search = "SEARCH_CEP"
+  case location = "GPS"
+  case customer = "CUSTOMER_ADDRESS"
+
+  case unknown = "UNKNOWN"
 }

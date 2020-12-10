@@ -21,7 +21,6 @@
 		C1351451258064000018EA0E /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135144D258064000018EA0E /* Customer.swift */; };
 		C1351452258064000018EA0E /* ConfigFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135144E258064000018EA0E /* ConfigFeature.swift */; };
 		C1351453258064000018EA0E /* RatingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135144F258064000018EA0E /* RatingList.swift */; };
-		C1351454258064000018EA0E /* CurrentAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1351450258064000018EA0E /* CurrentAddress.swift */; };
 		C13514672580646E0018EA0E /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135145D2580646E0018EA0E /* Tracking.swift */; };
 		C13514682580646E0018EA0E /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135145E2580646E0018EA0E /* Config.swift */; };
 		C13514692580646E0018EA0E /* Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C135145F2580646E0018EA0E /* Presentation.swift */; };
@@ -30,7 +29,6 @@
 		C135146C2580646E0018EA0E /* ConfigKeysEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13514632580646E0018EA0E /* ConfigKeysEnum.swift */; };
 		C135146D2580646E0018EA0E /* RatingListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13514642580646E0018EA0E /* RatingListType.swift */; };
 		C135146E2580646E0018EA0E /* TrackingEventsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13514652580646E0018EA0E /* TrackingEventsEnum.swift */; };
-		C135146F2580646E0018EA0E /* AddressTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13514662580646E0018EA0E /* AddressTypeEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +49,6 @@
 		C135144D258064000018EA0E /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		C135144E258064000018EA0E /* ConfigFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigFeature.swift; sourceTree = "<group>"; };
 		C135144F258064000018EA0E /* RatingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingList.swift; sourceTree = "<group>"; };
-		C1351450258064000018EA0E /* CurrentAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentAddress.swift; sourceTree = "<group>"; };
 		C135145D2580646E0018EA0E /* Tracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
 		C135145E2580646E0018EA0E /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		C135145F2580646E0018EA0E /* Presentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentation.swift; sourceTree = "<group>"; };
@@ -60,7 +57,6 @@
 		C13514632580646E0018EA0E /* ConfigKeysEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigKeysEnum.swift; sourceTree = "<group>"; };
 		C13514642580646E0018EA0E /* RatingListType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingListType.swift; sourceTree = "<group>"; };
 		C13514652580646E0018EA0E /* TrackingEventsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingEventsEnum.swift; sourceTree = "<group>"; };
-		C13514662580646E0018EA0E /* AddressTypeEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressTypeEnum.swift; sourceTree = "<group>"; };
 		DA517E29E814D4CB14743AD3 /* Pods_YDB2WIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDB2WIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				C135144E258064000018EA0E /* ConfigFeature.swift */,
-				C1351450258064000018EA0E /* CurrentAddress.swift */,
 				C135144D258064000018EA0E /* Customer.swift */,
 				C135144F258064000018EA0E /* RatingList.swift */,
 			);
@@ -222,7 +217,6 @@
 		C13514622580646E0018EA0E /* Enums */ = {
 			isa = PBXGroup;
 			children = (
-				C13514662580646E0018EA0E /* AddressTypeEnum.swift */,
 				C13514632580646E0018EA0E /* ConfigKeysEnum.swift */,
 				C13514642580646E0018EA0E /* RatingListType.swift */,
 				C13514652580646E0018EA0E /* TrackingEventsEnum.swift */,
@@ -350,10 +344,8 @@
 				C135142B258060AC0018EA0E /* YDIntegration+Live.swift in Sources */,
 				C135146E2580646E0018EA0E /* TrackingEventsEnum.swift in Sources */,
 				C135143B258061A70018EA0E /* YDIntegration+Tracking.swift in Sources */,
-				C1351454258064000018EA0E /* CurrentAddress.swift in Sources */,
 				C135146D2580646E0018EA0E /* RatingListType.swift in Sources */,
 				C1351451258064000018EA0E /* Customer.swift in Sources */,
-				C135146F2580646E0018EA0E /* AddressTypeEnum.swift in Sources */,
 				C1351427258060200018EA0E /* YDIntegration+Customer.swift in Sources */,
 				C13514692580646E0018EA0E /* Presentation.swift in Sources */,
 				C13514362580615F0018EA0E /* YDIntegration+Config.swift in Sources */,
