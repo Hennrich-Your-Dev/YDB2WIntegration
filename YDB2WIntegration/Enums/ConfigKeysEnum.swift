@@ -27,6 +27,7 @@ public enum YDConfigProperty: String {
 
   // Store Mode
   case npsEnabled
+  case npsFeedbackMessage
   case productsQueryVersion = "lasaB2WProductsQueryVersion"
 
   // Live
