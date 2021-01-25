@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "YDB2WIntegration"
-  spec.version      = "1.0.8"
+  spec.version      = "1.0.9"
   spec.summary      = "YDB2WIntegration."
   spec.homepage     = "http://yourdev/YDB2WIntegration"
 
