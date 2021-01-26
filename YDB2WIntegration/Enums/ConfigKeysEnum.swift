@@ -33,6 +33,8 @@ public enum YDConfigProperty: String {
   // Live
   case liveSpaceyOrder = "spaceyPositionIndex"
 
+  case liveCarrouselProductsBatches = "lazyLoadingItems"
+
   case liveYouTubePlayerAutoStart
   case liveYouTubePlayerResetVideoWhenPaused
   case liveYouTubePlayerEnableFullScreenButton
