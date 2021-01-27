@@ -10,5 +10,5 @@ target 'YDB2WIntegration' do
 
   # Pods for YDB2WIntegration
   pod 'YDExtensions', "1.0.29"
-  pod 'YDB2WModels', "1.0.12"
+  pod 'YDB2WModels', "1.0.0-prod"
 end
