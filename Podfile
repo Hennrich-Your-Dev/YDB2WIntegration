@@ -9,6 +9,6 @@ target 'YDB2WIntegration' do
   use_frameworks!
 
   # Pods for YDB2WIntegration
-  pod 'YDExtensions'
-  pod 'YDB2WModels'
+  pod 'YDExtensions', "1.0.29"
+  pod 'YDB2WModels', "1.0.12"
 end
