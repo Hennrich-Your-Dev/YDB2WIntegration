@@ -46,4 +46,5 @@ public enum YDConfigProperty: String {
   case liveChatPolling = "liveChatPolling"
   case liveChatLimit
   case liveChatSendDelay
+  case liveChatModerators = "chatModerators"
 }
