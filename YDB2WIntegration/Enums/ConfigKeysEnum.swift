@@ -36,6 +36,7 @@ public enum YDConfigProperty: String {
 
   case liveCarrouselProductsBatches = "lazyLoadingItems"
 
+  case liveYouTubeKey = "iOSYotubeKey"
   case liveYouTubePlayerAutoStart
   case liveYouTubePlayerResetVideoWhenPaused
   case liveYouTubePlayerEnableFullScreenButton
